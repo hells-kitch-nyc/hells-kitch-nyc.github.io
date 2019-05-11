@@ -7,6 +7,42 @@ a .bg-parallax:hover {
   opacity: 0.75;
 }
 
+#switchImg1:hover {
+  cursor: grab;
+  opacity: 0.75;
+}
+
+#switchImg1:active {
+  cursor: grabbing;
+}
+
+#switchImg2:hover {
+  cursor: grab;
+  opacity: 0.75;
+}
+
+#switchImg2:active {
+  cursor: grabbing;
+}
+
+#switchImg3:hover {
+  cursor: grab;
+  opacity: 0.75;
+}
+
+#switchImg3:active {
+  cursor: grabbing;
+}
+
+#switchImg4:hover {
+  cursor: grab;
+  opacity: 0.75;
+}
+
+#switchImg4:active {
+  cursor: grabbing;
+}
+
 @media only screen and (max-device-width: 1366px) {
   .bg-parallax {
     background-attachment: scroll;
@@ -61,6 +97,30 @@ a .bg-parallax:hover {
 .-front span {
   padding: 1rem;
   background-color: #000;
+}
+
+.-front a {
+  text-decoration: none;
+}
+
+.-front a:hover {
+  color: #FF0000 !important;
+}
+
+#switchImg1 a:hover {
+  color: #1eaedb !important;
+}
+
+#switchImg2 a:hover {
+  color: #FF0000 !important;
+}
+
+#switchImg3 a:hover {
+  color: #90ee90 !important;
+}
+
+#switchImg4 a:hover {
+  color: #800080 !important;
 }
 
 .bg-parallax .-front h1 {

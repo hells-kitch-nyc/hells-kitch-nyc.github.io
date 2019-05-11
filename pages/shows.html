@@ -13,10 +13,10 @@
   </head>
 
   <body>
-    <a href="https://marvelcinematicuniverse.fandom.com/wiki/Netflix" target="_blank">
-      <div class="bg-parallax" style="background-image: url('../assets/images/marvel_netflix1.jpg'); bottom: 5%">
+    
+      <div id="switchImg1" class="bg-parallax" style="background-image: url('../assets/images/marvel_netflix1.jpg')" data-swap="background-image: url('../assets/images/marvel_netflix2.jpg')">
         <div class="-front">
-            <h1 class="_alignCenter _f-danger"><span>Marvel Netflix</span></h1>
+            <h1 class="_alignCenter"><span><a class="_f-danger" href="https://marvelcinematicuniverse.fandom.com/wiki/Netflix" target="_blank">Marvel Netflix</a></span></h1>
         </div>
       </div>
     </a>
@@ -38,14 +38,12 @@
         Leading the way in bringing television onto the web with high-speed and quality streaming video, Netflix hosted several live-action series behind the creative vision of Marvel Television in bringing some of its most iconic crime-fighting comic book heroes to life. The shows generated cult-like fandom all over the globe but was consequently cancelled in 2018 and 2019 due to Disney's intentions to create their own streaming service with the Marvel intellectual properties (comic book characters) that they now own.  Below are the main characters that were featured in the Netflix + Marvel partnership while it lasted.
       </p>
     </div>
-
-    <a class="source" href="https://marvelcinematicuniverse.fandom.com/wiki/Daredevil_(TV_series)" target="_blank">
-      <div class="bg-parallax" style="background-image: url('../assets/images/daredevil_netflix.jpeg')">
-        <div class="-front">
-          <h1 class="_alignCenter _f-white">Daredevil</h1>
-        </div>
+    
+    <div id="switchImg2" class="bg-parallax" style="background-image: url('../assets/images/daredevil_netflix.jpeg')" data-swap="background-image: url('../assets/images/daredevil_netflix2.jpg')">
+      <div class="-front">
+        <h1 class="_alignCenter"><a class="source _f-white" href="https://marvelcinematicuniverse.fandom.com/wiki/Daredevil_(TV_series)" target="_blank">Daredevil</a></h1>
       </div>
-    </a>
+    </div>
 
     <div class="jumbo _white">
       <a href="https://quotecatalog.com/quotes/tv/marvel-s-daredevil/" target="_blank">
@@ -155,13 +153,11 @@
       </dl>
     </div>
 
-    <a class="source" href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Fist_(TV_series)" target="_blank">
-      <div class="bg-parallax" style="background-image: url('../assets/images/iron_fist_netflix.jpg')">
-        <div class="-front">
-          <h1 class="_alignCenter _f-white">Iron Fist</h1>
-        </div>
+    <div id="switchImg3" class="bg-parallax" style="background-image: url('../assets/images/iron_fist_netflix.jpg')" data-swap="background-image: url('../assets/images/iron_fist_netflix2.jpeg')">
+      <div class="-front">
+        <h1 class="_alignCenter"><a class="source _f-white" href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Fist_(TV_series)" target="_blank">Iron Fist</a></h1>
       </div>
-    </a>
+    </div>
     
     <div class="jumbo _white">
       <a href="https://quotecatalog.com/quotes/tv/marvel-s-iron-fist/" target="_blank">
@@ -184,10 +180,10 @@
       </dl>
     </div>
 
-    <a class="source" href="https://marvelcinematicuniverse.fandom.com/wiki/The_Defenders" target="_blank">
-      <div class="bg-parallax" style="background-image: url('../assets/images/defenders_netflix.jpg')">
+    
+      <div id="switchImg4" class="bg-parallax" style="background-image: url('../assets/images/defenders_netflix.jpg')" data-swap="background-image: url('../assets/images/defenders_netflix2.jpg')">
         <div class="-front">
-          <h1 class="_alignCenter _f-white">The Defenders</h1>
+          <h1 class="_alignCenter"><a class="source _f-white" href="https://marvelcinematicuniverse.fandom.com/wiki/The_Defenders" target="_blank">The Defenders</a></h1>
         </div>
       </div>
     </a>
@@ -219,6 +215,37 @@
     </div>
 
     <script src="../beauter-master/beauter.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+      </script>
+    
+    <script>
+      $('#switchImg1').click(function () {
+        var _this = $(this);
+        var current = _this.attr("style");
+        var swap = _this.attr("data-swap");
+        _this.attr('style', swap).attr("data-swap", current);
+      });
+      $('#switchImg2').click(function () {
+        var _this = $(this);
+        var current = _this.attr("style");
+        var swap = _this.attr("data-swap");
+        _this.attr('style', swap).attr("data-swap", current);
+      });
+      $('#switchImg3').click(function () {
+        var _this = $(this);
+        var current = _this.attr("style");
+        var swap = _this.attr("data-swap");
+        _this.attr('style', swap).attr("data-swap", current);
+      });
+      $('#switchImg4').click(function () {
+        var _this = $(this);
+        var current = _this.attr("style");
+        var swap = _this.attr("data-swap");
+        _this.attr('style', swap).attr("data-swap", current);
+      });
+    </script>
 
   </body>
 
